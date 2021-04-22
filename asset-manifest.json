@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/webcodersblog-frontend-deploy/static/css/main.cf959585.chunk.css",
+    "main.js": "/webcodersblog-frontend-deploy/static/js/main.28354f6f.chunk.js",
+    "main.js.map": "/webcodersblog-frontend-deploy/static/js/main.28354f6f.chunk.js.map",
+    "runtime-main.js": "/webcodersblog-frontend-deploy/static/js/runtime-main.f8044112.js",
+    "runtime-main.js.map": "/webcodersblog-frontend-deploy/static/js/runtime-main.f8044112.js.map",
+    "static/js/2.89564027.chunk.js": "/webcodersblog-frontend-deploy/static/js/2.89564027.chunk.js",
+    "static/js/2.89564027.chunk.js.map": "/webcodersblog-frontend-deploy/static/js/2.89564027.chunk.js.map",
+    "index.html": "/webcodersblog-frontend-deploy/index.html",
+    "static/css/main.cf959585.chunk.css.map": "/webcodersblog-frontend-deploy/static/css/main.cf959585.chunk.css.map",
+    "static/js/2.89564027.chunk.js.LICENSE.txt": "/webcodersblog-frontend-deploy/static/js/2.89564027.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/webcodersblog-frontend-deploy/static/media/Background.02fabc0b.svg",
+    "static/media/personalphoto.6df68ae0.jpg": "/webcodersblog-frontend-deploy/static/media/personalphoto.6df68ae0.jpg",
+    "static/media/port1.f5e9cdf9.PNG": "/webcodersblog-frontend-deploy/static/media/port1.f5e9cdf9.PNG",
+    "static/media/port2.86b96e0b.PNG": "/webcodersblog-frontend-deploy/static/media/port2.86b96e0b.PNG",
+    "static/media/port3.db52070e.PNG": "/webcodersblog-frontend-deploy/static/media/port3.db52070e.PNG",
+    "static/media/port4.fb170f6e.PNG": "/webcodersblog-frontend-deploy/static/media/port4.fb170f6e.PNG",
+    "static/media/port5.1d8922e2.PNG": "/webcodersblog-frontend-deploy/static/media/port5.1d8922e2.PNG",
+    "static/media/port6.15bbd128.PNG": "/webcodersblog-frontend-deploy/static/media/port6.15bbd128.PNG",
+    "static/media/port7.a0e7d7b6.PNG": "/webcodersblog-frontend-deploy/static/media/port7.a0e7d7b6.PNG",
+    "static/media/port8.c571bbff.PNG": "/webcodersblog-frontend-deploy/static/media/port8.c571bbff.PNG",
+    "static/media/port9.98f16284.PNG": "/webcodersblog-frontend-deploy/static/media/port9.98f16284.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8044112.js",
+    "static/js/2.89564027.chunk.js",
+    "static/css/main.cf959585.chunk.css",
+    "static/js/main.28354f6f.chunk.js"
+  ]
+}
