@@ -1,0 +1,23 @@
+$main_bg_clr: #101010;
+$sidebar_bg_clr: #191919;
+
+$heading_clr: #f71d0b;
+$text_clr: #f00b5e;
+
+$gradient_clr_one: linear-gradient(
+  to right,
+  rgb(247, 29, 11),
+  rgb(240, 11, 95)
+);
+
+$gradient_clr_two: linear-gradient(
+  to bottom,
+  rgb(16, 16, 16),
+  rgb(240, 11, 95)
+);
+
+$gradient_clr_three: linear-gradient(
+  to bottom,
+  rgb(240, 11, 95),
+  rgb(16, 16, 16)
+);

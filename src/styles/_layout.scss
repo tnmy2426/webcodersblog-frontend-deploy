@@ -1,0 +1,130 @@
+.App {
+  .sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: $sidebar_bg_clr;
+    position: fixed;
+    z-index: 11;
+    transform-origin: left;
+
+    @media screen and (max-width: 1024px) {
+      width: 30%;
+      transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 50%;
+    }
+  } // end of sidebar class
+
+  .navToggle {
+    @media screen and (max-width: 1024px) {
+      transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+    }
+  } //end of navToggle class
+
+  .main_content {
+    width: 80%;
+    min-height: 100vh;
+    margin-left: 20%;
+    background-color: $main_bg_clr;
+    background-image: url("../img/Background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    @media screen and (max-width: 375px) {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    // @media screen and (max-width: 768px) {
+    //   margin-left: 0;
+    //   width: 100%;
+    // }
+
+    .content {
+      margin: 0 15rem;
+
+      // @media screen and (max-width: 375px) {
+      //   margin: 0 1rem;
+      // }
+      @media screen and (max-width: 1024px) {
+        margin: 0 3rem;
+      }
+    } //end of content class
+  } //end od main_content class
+} // end od App
+
+///Responsive Navbar Togglers
+.nav_btn {
+  position: absolute;
+  z-index: 10;
+  right: 10%;
+  top: 5%;
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .lines_1,
+  .lines_2,
+  .lines_3,
+  .lines_4 {
+    height: 0.3rem;
+    width: 100%;
+    background-color: $text_clr;
+    pointer-events: none;
+    display: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+
+    .lines_1,
+    .lines_2,
+    .lines_3,
+    .lines_4 {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    right: 4%;
+    top: 3%;
+  }
+} // end of nav_btn class

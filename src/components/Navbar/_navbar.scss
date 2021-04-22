@@ -1,0 +1,86 @@
+@import "../../styles/colors";
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+.Navbar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav_logo {
+    padding-top: 5rem;
+    a {
+      //   font-family: "Bree Serif", serif;
+      font-family: "Righteous", cursive;
+      font-size: 4rem;
+      letter-spacing: 0.2rem;
+      background: $gradient_clr_one;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 768px) {
+      a {
+        letter-spacing: 0.1rem;
+        font-weight: 800;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      a {
+        font-size: 2rem;
+      }
+    }
+  } // end of nav_logo class
+
+  .nav_items {
+    width: 100%;
+    .nav_item {
+      text-align: center;
+
+      a {
+        font-size: 2rem;
+        font-weight: 500;
+        text-decoration: none;
+        display: block;
+        padding: 1rem 0;
+        color: $text_clr;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+
+        &:hover {
+          //   color: $heading_clr;
+          color: #ffffff;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+      }
+    } // end of nav_item class
+  } // end of nav_items class
+
+  footer {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    @media screen and (max-width: 375px) {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  }
+} // end of Navbar class
+
+.active_link {
+  background-color: $main_bg_clr;
+  //   color: #ffffff;
+}

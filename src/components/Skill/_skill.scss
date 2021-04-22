@@ -1,0 +1,58 @@
+@import "../../styles/colors";
+
+.skill_content {
+  margin: 1rem 0;
+  line-height: 2;
+  h5 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .skill_bar {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+
+      color: $text_clr;
+    }
+
+    .skill_progress_bar {
+      width: 100%;
+
+      .outer_progress {
+        width: 100%;
+        height: 0.5rem;
+        margin-left: 1.5rem;
+        background-color: #dddddd91;
+        position: relative;
+
+        .inner_progress {
+          bottom: 0;
+          left: 0;
+          height: 100%;
+          position: absolute;
+          background: $gradient_clr_one;
+        }
+      } // end of outer_progress class
+    } // end of skill_progress_bar class
+  } // end of skill_bar class
+
+  @media screen and (max-width: 375px) {
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .skill_bar {
+      flex-direction: row;
+      p {
+        font-size: 1.2rem;
+      }
+
+      .skill_progress_bar {
+        width: 85%;
+      } // end of skill_progress_bar class
+    } // end of skill_bar class
+  }
+} // end of skill_content class

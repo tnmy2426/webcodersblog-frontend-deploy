@@ -1,0 +1,167 @@
+// @import "../../components/PageTitle/title";
+@import "../../styles/colors";
+
+.AboutPage {
+  .skillsSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    margin: 1rem 0;
+
+    @media screen and (max-width: 375px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 1rem;
+      padding: 0 1rem;
+    }
+  } // end of skillsSection class
+
+  .serviceSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+
+    @media screen and (max-width: 375px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+    }
+  } // end of serviceSection class
+
+  .serviceDetails {
+    padding: 2rem 0;
+    h2 {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 800;
+      background: $gradient_clr_one;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+      align-items: center;
+      margin: 3rem 0;
+
+      .left_section {
+        border-left: 2px solid $text_clr;
+        padding-left: 2rem;
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          padding-bottom: 1rem;
+        }
+        p {
+          line-height: 2;
+          font-size: 1.5rem;
+          font-weight: 200;
+        }
+      } // end of left_section class
+
+      .right_section {
+        border-left: 2px solid $text_clr;
+        padding-left: 2rem;
+
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          padding-bottom: 1rem;
+        }
+        p {
+          line-height: 2;
+          font-size: 1.5rem;
+          font-weight: 200;
+        }
+      } // end of right_section class
+    } // end of details class
+
+    @media screen and (max-width: 375px) {
+      padding: 1rem 0;
+      h2 {
+        margin-top: 1rem;
+        font-size: 4.5rem;
+      }
+
+      .details {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+        margin: 2rem 0;
+
+        .left_section {
+          padding-left: 1rem;
+          margin-bottom: 5rem;
+          h3 {
+            font-size: 1.6rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        } // end of left_section class
+
+        .right_section {
+          padding-left: 1rem;
+
+          h3 {
+            font-size: 1.6rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        } // end of right_section class
+      } // end of details class
+    }
+
+    @media screen and (max-width: 1024px) {
+    } // end of serviceDetails class
+  }
+
+  .serviceDetailseMore {
+    padding-bottom: 10rem;
+
+    h2 {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 800;
+      background: $gradient_clr_one;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .speciality_content {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 3rem;
+      margin-left: 28%;
+
+      border-left: 2px solid $text_clr;
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 200;
+        line-height: 2;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      padding-bottom: 10rem;
+
+      h2 {
+        font-size: 4.5rem;
+      }
+
+      .speciality_content {
+        margin-top: 1rem;
+        padding: 2rem;
+        margin-left: 0;
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  } //end of serviceDetailseMore class
+}

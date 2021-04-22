@@ -1,0 +1,54 @@
+@import "../../styles/colors";
+
+.service_container {
+  margin: 1rem 0;
+  //   background-color: $sidebar_bg_clr;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+
+  .service_content {
+    position: relative;
+    text-align: center;
+    padding: 3rem 2rem;
+
+    img {
+      display: inline-block;
+      width: 6rem;
+      height: 6rem;
+      margin-top: 3rem;
+    }
+
+    h5 {
+      padding-top: 3rem;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    p {
+      padding-top: 0.8rem;
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+  }
+}
+
+.hover_effect {
+  background-color: $sidebar_bg_clr;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+
+  &:hover {
+    background: $gradient_clr_two;
+    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+  }
+}
